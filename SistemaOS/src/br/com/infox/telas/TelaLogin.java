@@ -15,12 +15,13 @@ import java.awt.Label;
 import java.awt.TextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.JPasswordField;
 
 public class TelaLogin extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
 	private JTextField textField_1;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -58,7 +59,7 @@ public class TelaLogin extends JFrame {
 		});
 		contentPane.add(button, BorderLayout.SOUTH);
 		
-		Label label = new Label("Usu\u00E1rio:");
+		Label label = new Label("Usuario:");
 		label.setBackground(Color.GRAY);
 		contentPane.add(label, BorderLayout.WEST);
 		
@@ -66,15 +67,14 @@ public class TelaLogin extends JFrame {
 		label_1.setBackground(Color.GRAY);
 		contentPane.add(label_1, BorderLayout.EAST);
 		
-		textField = new JTextField();
-		textField.setBackground(Color.ORANGE);
-		contentPane.add(textField, BorderLayout.NORTH);
-		textField.setColumns(10);
-		
 		textField_1 = new JTextField();
 		textField_1.setBackground(Color.GREEN);
 		contentPane.add(textField_1, BorderLayout.CENTER);
-		textField_1.setColumns(10);
+		textField_1.setColumns(15);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBackground(Color.RED);
+		contentPane.add(passwordField, BorderLayout.NORTH);
 	}
 
 }
