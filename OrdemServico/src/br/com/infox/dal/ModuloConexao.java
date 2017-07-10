@@ -27,7 +27,9 @@ public class ModuloConexao {
                     conexao = DriverManager.getConnection(url, user, password);
                     return conexao;
         } catch (Exception e) {
-            System.out.println(e);
+            // a linha abaixo serve de apoio para esclarecer erro de conexao com o banco
+            //System.out.println(e);
+            
             return null;
         }
     }
